@@ -87,8 +87,8 @@ async function fetchTCGData() {
 }
 
 function createTCGCard(card) {
-    // Converter preço em dólares para reais (assumindo uma taxa de 1 USD = 5.00 BRL)
-    const priceInReal = card.cardmarket ? (card.cardmarket.prices.averageSellPrice * 5).toFixed(2) : 'N/A';
+    // Converter preço em dólares para reais (assumindo uma taxa de 1 USD = 6.00 BRL)
+    const priceInReal = card.cardmarket ? (card.cardmarket.prices.averageSellPrice * 6).toFixed(2) : 'N/A';
 
     return `
         <div class="col-md-3 tcg-card">
